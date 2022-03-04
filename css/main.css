@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+}
+
+.home1 {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home1__content {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 50%;
+}
+@media (max-width: 56.25em) {
+  .home1__content {
+    max-width: 65%;
+  }
+}
+@media (max-width: 50em) {
+  .home1__content {
+    max-width: 80%;
+  }
+}
+@media (max-width: 37.5em) {
+  .home1__content {
+    max-width: 90%;
+  }
+}
+.home1__content > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+@media (max-width: 50em) {
+  .home1__content > h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home1__content > h1 {
+    font-size: 2.25rem;
+  }
+}
+.home1__content > p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+@media (max-width: 50em) {
+  .home1__content > p {
+    font-size: 1.75rem;
+    margin: 3rem 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .home1__content > p {
+    font-size: 1.5rem;
+  }
+}
+.home1__content > div {
+  margin: 1rem 0 0;
+}
+.home1__content > div > a {
+  text-shadow: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width: 50em) {
+  .home1__content > div > a {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home1__content > div > a {
+    font-size: 1.2rem;
+  }
+}
+.home1__content > div > a:first-child {
+  margin-right: 1rem;
+}
+
+.home2 {
+  padding: 10rem 10% 0;
+  position: relative;
+}
+@media (max-width: 65.62em) {
+  .home2 {
+    padding: 5rem 5% 2.5rem;
+  }
+}
+.home2 > svg {
+  position: absolute;
+  top: 5rem;
+  left: -10rem;
+}
+.home2__content {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-gap: 3rem;
+  position: relative;
+}
+@media (max-width: 50em) {
+  .home2__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home2__content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+.home2__content--first > h2 {
+  font-size: 4rem;
+  line-height: 110%;
+}
+@media (max-width: 50em) {
+  .home2__content--first > h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home2__content--first > h2 {
+    font-size: 2rem;
+  }
+}
+.home2__content--first > p {
+  font-size: 2rem;
+  margin-top: 3rem;
+  line-height: 120%;
+}
+@media (max-width: 50em) {
+  .home2__content--first > p {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home2__content--first > p {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+}
+.home2__content--last > img {
+  width: 40rem;
+  height: auto;
+}
+@media (max-width: 56.25em) {
+  .home2__content--last > img {
+    width: 32.5rem;
+  }
+}
+@media (max-width: 50em) {
+  .home2__content--last > img {
+    width: 30rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .home2__content--last > img {
+    width: 25rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home2__content--last > img {
+    width: 100%;
+  }
+}
+
+.home3 {
+  padding: 5rem 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  background-color: #1A1A1A;
+  justify-items: center;
+  text-align: center;
+}
+@media (max-width: 65.62em) {
+  .home3 {
+    padding: 2.5rem 5%;
+  }
+}
+.home3 > h2 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 110%;
+}
+@media (max-width: 56.25em) {
+  .home3 > h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .home3 > h2 {
+    font-size: 2.5rem;
+  }
+}
+.home3__plans {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+@media (max-width: 50em) {
+  .home3__plans {
+    grid-template-columns: 1fr;
+    margin: 0 20%;
+  }
+}
+@media (max-width: 43.75em) {
+  .home3__plans {
+    margin: 0 10%;
+  }
+}
+@media (max-width: 37.5em) {
+  .home3__plans {
+    margin: 0;
+  }
+}
+.home3__plans--plan {
+  border: #fff solid 2px;
+  border-radius: 50px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+.home3__plans--plan > h3 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: 1rem 0rem 1.5rem;
+}
+@media (max-width: 56.25em) {
+  .home3__plans--plan > h3 {
+    font-size: 2rem;
+  }
+}
+.home3__plans--plan > div > p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+@media (max-width: 56.25em) {
+  .home3__plans--plan > div > p {
+    font-size: 1.2rem;
+  }
+}
+.home3__plans--plan > div > p:first-child {
+  font-size: 1.6rem;
+  margin: 1.3rem 0;
+}
+@media (max-width: 56.25em) {
+  .home3__plans--plan > div > p:first-child {
+    font-size: 1.3rem;
+  }
+}
+.home3__plans--plan > a {
+  margin: 1.5rem 0rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.home3__plans > div > h3 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: 1rem 0rem 1.5rem;
+}
+.home3__plans > div > p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+.home3__plans > div > a {
+  margin: 1.5rem 0rem 1rem;
+  font-size: 1.25rem;
+}
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  display: inline-block;
+}
+.btn__c-blue-g {
+  background-image: linear-gradient(90deg, #31CDFF 0%, #008FBC 100%);
+  color: #fff;
+}
+.btn__c-blue-g:hover {
+  background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+  color: #31CDFF;
+}
+.btn__c-white {
+  background-color: #fff;
+  color: #31CDFF;
+}
+.btn__c-white:hover {
+  animation: BackgroundGradientWhiteToBlue 300ms all;
+  background-image: linear-gradient(90deg, #31CDFF 0%, #008FBC 100%);
+  color: #fff;
+}
+.btn__c-black {
+  background-color: #1A1A1A;
+  color: #fff;
+  border: solid 2px #fff;
+}
+.btn__c-black:hover {
+  background-color: white;
+  color: #1A1A1A;
+}
+.btn__s-normal {
+  padding: 1rem 3.5rem;
+}
+.btn__sh-normal {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes BackgroundGradientWhiteToBlue {
+  0% {
+    background-image: linear-gradient(90deg, #008FBC 0%, #31CDFF 100%);
+  }
+  100% {
+    background-image: linear-gradient(90deg, #31CDFF 0%, #008FBC 100%);
+  }
+}
+.line {
+  background-color: #31CDFF;
+  width: 5rem;
+  height: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
