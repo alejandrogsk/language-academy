@@ -36,10 +36,10 @@
             line-height: 120%;
 
             @include respond(tab) {
-                font-size: 3rem;
+                font-size: 3.25rem;
             }
             @include respond(phone-tab) {
-                font-size: 2.25rem;
+                font-size: 2.75rem;
             }
         }
 
@@ -54,7 +54,7 @@
                 margin: 3rem 0;
             }
             @include respond(phone-tab) {
-                font-size: 1.5rem;
+                margin: 2rem 0;
             }
         }
 
@@ -92,6 +92,11 @@
         position: absolute;
         top: 5rem;
         left: -10rem;
+
+        @include respond(phone-tab) {
+            top: -4rem;
+            width: 20rem;
+        }
     }
 
     &__content {
@@ -133,9 +138,10 @@
                     margin-top: 2rem;
                 }
                 @include respond(phone-tab) {
-                    font-size: 1.25rem;
+                    font-size: 1.5rem;
                     margin-top: 1.5rem;
                 }
+
             }
         }
 
@@ -261,23 +267,6 @@
             }
         }
 
-        // & > div {
-        //     & > h3 {
-        //         font-size: 2.5rem;
-        //         text-decoration: underline;
-        //         margin: 1rem 0rem 1.5rem;
-        //     }
-
-        //     & > p {
-        //         font-size: 1.4rem;
-        //         margin: 1rem 0;
-        //     }
-
-        //     & > a {
-        //         margin: 1.5rem 0rem 1rem;
-        //         font-size: 1.25rem;
-        //     }
-        // }
     }
 }
 

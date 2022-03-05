@@ -21,6 +21,16 @@ header {
   right: 0;
   padding: 2rem 6rem;
 }
+@media (max-width: 50em) {
+  header {
+    padding: 2rem 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  header {
+    padding: 1.5rem 2.5rem;
+  }
+}
 
 .header__fixed {
   position: fixed;
@@ -143,10 +153,10 @@ footer > span {
   height: 2rem;
   margin: 1rem;
   position: fixed;
-  right: 1rem;
+  right: 2.5rem;
   transform: rotate(0deg);
   transition: 300ms all;
-  top: 1rem;
+  top: 2.5rem;
   width: 4.5rem;
   z-index: 2;
   display: none;
@@ -171,33 +181,25 @@ footer > span {
   top: 0;
 }
 .nav__icon > span:nth-child(2) {
-  background-color: red;
   top: 0.75rem;
+  cursor: auto;
 }
 .nav__icon > span:last-child {
-  top: 0.125rem;
+  top: 1.6rem;
 }
 .nav__icon.menu__open > span:first-child {
   top: 6px;
   transform: rotate(145deg);
 }
 .nav__icon.menu__open > span:nth-child(2) {
-  transform: all 300ms;
-  animation-name: menuBarrHide;
+  background-color: transparent;
+  left: -4.5rem;
 }
 .nav__icon.menu__open > span:last-child {
   top: 6px;
   transform: rotate(-145deg);
 }
 
-@keyframes menuBarrHide {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 2rem;
-  }
-}
 .home1 {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero.jpg");
@@ -235,12 +237,12 @@ footer > span {
 }
 @media (max-width: 50em) {
   .home1__content > h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 }
 @media (max-width: 37.5em) {
   .home1__content > h1 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 }
 .home1__content > p {
@@ -258,7 +260,7 @@ footer > span {
 }
 @media (max-width: 37.5em) {
   .home1__content > p {
-    font-size: 1.5rem;
+    margin: 2rem 0;
   }
 }
 .home1__content > div {
@@ -296,6 +298,12 @@ footer > span {
   position: absolute;
   top: 5rem;
   left: -10rem;
+}
+@media (max-width: 37.5em) {
+  .home2 > svg {
+    top: -4rem;
+    width: 20rem;
+  }
 }
 .home2__content {
   display: grid;
@@ -342,7 +350,7 @@ footer > span {
 }
 @media (max-width: 37.5em) {
   .home2__content--first > p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
   }
 }

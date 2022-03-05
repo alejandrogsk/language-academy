@@ -9,6 +9,9 @@ header {
     left: 0;
     right: 0;
     padding: 2rem 6rem;
+
+    @include respond(tab) {padding: 2rem 4rem; }
+    @include respond(phone-tab) {padding: 1.5rem 2.5rem; }
 }
 
 //This class allows the header to be fixed at top of the screen
