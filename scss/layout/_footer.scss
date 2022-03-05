@@ -1,0 +1,13 @@
+footer {
+    background-color: $c-black;
+    color: $c-white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 5rem 10%;
+
+    & > span {
+        font-size: 1.5rem;
+    }
+}

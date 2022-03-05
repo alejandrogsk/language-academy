@@ -219,8 +219,6 @@
             justify-items: stretch;
             align-items: center;
 
-            
-
             & > h3 {
                 font-size: 2.5rem;
                 text-decoration: underline;
@@ -228,7 +226,6 @@
                 @include respond(tab-big) {
                     font-size: 2rem;
                 }
-                
             }
 
             & > div {
@@ -238,6 +235,10 @@
                     @include respond(tab-big) {
                         font-size: 1.2rem;
                     }
+
+                    @include respond(tab) {
+                        font-size: 1.5rem;
+                    }
                 }
                 & > p:first-child {
                     font-size: 1.6rem;
@@ -245,6 +246,10 @@
 
                     @include respond(tab-big) {
                         font-size: 1.3rem;
+                    }
+
+                    @include respond(tab) {
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -256,26 +261,117 @@
             }
         }
 
+        // & > div {
+        //     & > h3 {
+        //         font-size: 2.5rem;
+        //         text-decoration: underline;
+        //         margin: 1rem 0rem 1.5rem;
+        //     }
+
+        //     & > p {
+        //         font-size: 1.4rem;
+        //         margin: 1rem 0;
+        //     }
+
+        //     & > a {
+        //         margin: 1.5rem 0rem 1rem;
+        //         font-size: 1.25rem;
+        //     }
+        // }
+    }
+}
+
+.home4 {
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    justify-items: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+
+    @include respond(desktop-small) {
+        padding: 2.5rem 5%;
+    }
+
+    & > h2 {
+        font-size: 4rem;
+        line-height: 110%;
+
+        @include respond(tab-big) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone-tab) {
+            font-size: 2.5rem;
+        }
+    }
 
 
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+
+        @include respond(tab-big) {
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include respond(phone-tab) {
+            grid-template-columns: 1fr;
+        }
 
         & > div {
-
+            padding: 2rem;
+            background-color: $c-grey;
+            border-radius: 50px;
+            z-index: 2;
             & > h3 {
-                font-size: 2.5rem;
-                text-decoration: underline;
-                margin: 1rem 0rem 1.5rem;
+                font-size: 2rem;
+                line-height: 120%;
+                margin-bottom: 1.5rem;
+                @include respond(tab-big) {
+                    font-size: 1.8rem;
+                }
             }
 
             & > p {
-                font-size: 1.4rem;
-                margin: 1rem 0;
+                font-size: 1.5rem;
+                font-weight: 600;
             }
+        }
+    }
 
-            & > a {
-                margin: 1.5rem 0rem 1rem;
-                font-size: 1.25rem;
-            }
+    & > svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        width: 75rem;
+        z-index: 1;
+    }
+}
+
+
+.home5 {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    min-height: 20vh;
+
+    & > a {
+        font-size: 2.25rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 0rem 0 4rem;
+
+        @include respond(tab-big) {
+            font-size: 2rem;
         }
     }
 }
