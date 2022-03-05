@@ -290,6 +290,7 @@
     text-align: center;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 
     @include respond(desktop-small) {
         padding: 2.5rem 5%;
@@ -350,6 +351,14 @@
         height: auto;
         width: 75rem;
         z-index: 1;
+
+        @include respond(tab) {
+            width: 50rem;
+            bottom: 10rem;
+        }
+        @include respond(tab-small) {
+            display: none;
+        }
     }
 }
 

@@ -1,0 +1,79 @@
+/*Navigation*/
+.responsive__menu {
+    @include respond(tab) {
+        background-color: $c-white;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 25rem;
+        z-index: 1;
+        border-left: 1px $c-primary solid;
+        transform: translateX(30rem);
+        transition: 300ms all;
+    }
+    @include respond(phone-tab) {
+        width: 22rem;
+    }
+    @include respond(mobile) {
+        width: 20rem;
+    }
+    @include respond(mobile-small) {
+        width: 18rem;
+    }
+
+    & > ul {
+        display: flex;
+        list-style: none;
+        @include respond(tab) {
+            list-style: none;
+            margin: 5rem auto auto;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        & > li {
+            margin-left: 2rem;
+
+            @include respond(tab) {
+                margin-top: 2rem;
+                text-transform: uppercase;
+            }
+
+            & > a {
+                font-size: 1.7rem;
+                text-decoration: none;
+                color: $c-white;
+                text-transform: capitalize;
+                font-weight: 500;
+                transition: 300ms all;
+
+                @include respond(tab) {
+                    font-size: 2.2rem;
+                    text-decoration: none;
+                    color: $c-black;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+
+    &.show__menu {
+        transform: translateX(0rem);
+    }
+}
+
+//This is for header fixed
+.header__fixed > .responsive__menu > ul > li > a {
+    color: $c-black;
+
+    &:hover {
+        color: $c-primary;
+    }
+}

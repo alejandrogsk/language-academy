@@ -1,0 +1,12 @@
+.logo {
+    & > span {
+        color: $c-white;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+//This is for header fixed
+.header__fixed > .logo > span {
+    color: $c-primary;
+}

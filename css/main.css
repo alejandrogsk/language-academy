@@ -11,6 +11,39 @@ html {
   letter-spacing: 0.05rem;
 }
 
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 6rem;
+}
+
+.header__fixed {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+@media (max-width: 50em) {
+  .header__fixed {
+    position: absolute;
+  }
+}
+
+.logo > span {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header__fixed > .logo > span {
+  color: #31CDFF;
+}
+
 footer {
   background-color: #1A1A1A;
   color: #fff;
@@ -23,6 +56,148 @@ footer > span {
   font-size: 1.5rem;
 }
 
+/*Navigation*/
+@media (max-width: 50em) {
+  .responsive__menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25rem;
+    z-index: 1;
+    border-left: 1px #31CDFF solid;
+    transform: translateX(30rem);
+    transition: 300ms all;
+  }
+}
+@media (max-width: 37.5em) {
+  .responsive__menu {
+    width: 22rem;
+  }
+}
+@media (max-width: 25em) {
+  .responsive__menu {
+    width: 20rem;
+  }
+}
+@media (max-width: 20em) {
+  .responsive__menu {
+    width: 18rem;
+  }
+}
+.responsive__menu > ul {
+  display: flex;
+  list-style: none;
+}
+@media (max-width: 50em) {
+  .responsive__menu > ul {
+    list-style: none;
+    margin: 5rem auto auto;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+.responsive__menu > ul > li {
+  margin-left: 2rem;
+}
+@media (max-width: 50em) {
+  .responsive__menu > ul > li {
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+}
+.responsive__menu > ul > li > a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 300ms all;
+}
+@media (max-width: 50em) {
+  .responsive__menu > ul > li > a {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+}
+.responsive__menu > ul > li > a:hover {
+  color: #31CDFF;
+}
+.responsive__menu.show__menu {
+  transform: translateX(0rem);
+}
+
+.header__fixed > .responsive__menu > ul > li > a {
+  color: #1A1A1A;
+}
+.header__fixed > .responsive__menu > ul > li > a:hover {
+  color: #31CDFF;
+}
+
+.nav__icon {
+  cursor: pointer;
+  height: 2rem;
+  margin: 1rem;
+  position: fixed;
+  right: 1rem;
+  transform: rotate(0deg);
+  transition: 300ms all;
+  top: 1rem;
+  width: 4.5rem;
+  z-index: 2;
+  display: none;
+}
+@media (max-width: 50em) {
+  .nav__icon {
+    display: block;
+  }
+}
+.nav__icon > span {
+  background-color: #31CDFF;
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 4.5rem;
+  border-radius: 50px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 300ms all;
+}
+.nav__icon > span:first-child {
+  top: 0;
+}
+.nav__icon > span:nth-child(2) {
+  background-color: red;
+  top: 0.75rem;
+}
+.nav__icon > span:last-child {
+  top: 0.125rem;
+}
+.nav__icon.menu__open > span:first-child {
+  top: 6px;
+  transform: rotate(145deg);
+}
+.nav__icon.menu__open > span:nth-child(2) {
+  transform: all 300ms;
+  animation-name: menuBarrHide;
+}
+.nav__icon.menu__open > span:last-child {
+  top: 6px;
+  transform: rotate(-145deg);
+}
+
+@keyframes menuBarrHide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 2rem;
+  }
+}
 .home1 {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero.jpg");
@@ -309,6 +484,7 @@ footer > span {
   text-align: center;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 @media (max-width: 65.62em) {
   .home4 {
@@ -371,6 +547,17 @@ footer > span {
   height: auto;
   width: 75rem;
   z-index: 1;
+}
+@media (max-width: 50em) {
+  .home4 > svg {
+    width: 50rem;
+    bottom: 10rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .home4 > svg {
+    display: none;
+  }
 }
 
 .home5 {

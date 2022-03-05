@@ -3,7 +3,11 @@
 @import "./global/global";
 @import "./global/mixins";
 
+@import "./layout/header";
+@import "./layout/logo";
 @import "./layout/footer";
+@import "./layout/navbar";
+@import "./layout/navigationIcon";
 
 //Pages
 @import "./pages/home.scss";
