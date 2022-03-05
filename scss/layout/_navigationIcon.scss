@@ -6,7 +6,7 @@
     right: 2.5rem;
     transform: rotate(0deg);
     transition: 300ms all;
-    top: 2.5rem;
+    top: 2rem;
     width: 4.5rem;
     z-index: 2;
 
@@ -29,7 +29,7 @@
 
         &:first-child { top: 0; }
         &:nth-child(2) { top: 0.75rem; cursor: auto;}
-        &:last-child { top: 1.60rem }
+        &:last-child { top: 1.55rem }
     }
 
     //This is the class that should be added when the user makes click on the icon
