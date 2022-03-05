@@ -16,7 +16,7 @@
 
         &-white {
             background-color: $c-white;
-            color: $c-primary;
+            color: $c-black;
             &:hover {
                 animation: BackgroundGradientWhiteToBlue 300ms all;
                 background-image: linear-gradient(90deg, $c-primary 0%, $c-primary-dark 100%); 
