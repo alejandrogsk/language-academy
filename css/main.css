@@ -894,6 +894,18 @@ footer > span {
     font-size: 1.3rem;
   }
 }
+.contact2__form > button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins" sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 37.5em) {
+  .contact2__form > button {
+    width: 100%;
+  }
+}
 
 .btn {
   border-radius: 50px;
