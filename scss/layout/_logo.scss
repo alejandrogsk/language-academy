@@ -1,5 +1,6 @@
 .logo {
-    & > span {
+    & > a {
+        text-decoration: none;
         color: $c-white;
         font-size: 3rem;
         font-weight: 600;
@@ -7,6 +8,6 @@
 }
 
 //This is for header fixed
-.header__fixed > .logo > span {
+.header__fixed > .logo > a {
     color: $c-primary;
 }

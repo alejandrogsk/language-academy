@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Academy | Contactanos</title>
+
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <!--Navigation-->
+        <header id="header" class="header">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="https://alejandrogsk.github.io/language-academy/" >Academy</a>
+            </div>
+
+            <nav class="responsive__menu" id="menu-responsive">
+                <ul>
+                    <li><a class="navigation-link" href="https://alejandrogsk.github.io/language-academy/">Inicio</a></li>
+                    <li>
+                        <a class="navigation-link" href="https://alejandrogsk.github.io/language-academy/ingles">Inglés</a>
+                    </li>
+                    <li>
+                        <a class="navigation-link" href="https://alejandrogsk.github.io/language-academy/aleman">Alemán</a>
+                    </li>
+                    <li>
+                        <a class="navigation-link" href="https://alejandrogsk.github.io/language-academy/contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav__icon" id="navicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <!--Fin Navigation-->
+
+        <main>
+            <section class="languages-hero contact1">
+                <h1>¡TE ESTAMOS ESPERANDO!</h1>
+            </section>
+
+            <section class="contact2">
+                <h2>Completa el formulario o contactanos a través de WhatsApp</h2>
+                <span class="line"></span>
+
+                <form
+                        method="post"
+                        action="https://formsubmit.co/johnsmithoporto@gmail.com"
+                        id="form"
+                        class="contact2__form"
+                        autocomplete="off"
+                    >
+                        <!--For subject -->
+                        <input type="hidden" name="_subject" value="Enviado desde el sitio web">
+                        <!--For spam -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Redirection -->
+                        <input type="hidden" name="_next" value="https://alejandrogsk.github.io/kuchenamoblamientos/form-page">
+                        <!-- Diseable formsubmit.co captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
+
+
+
+                        <div class="contact2__form--fields">
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre"
+                                placeholder="Nombre"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="apellido"
+                                id="apellido"
+                                placeholder="Apellido"
+                                required
+                            />
+
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="telefono"
+                                id="telefono"
+                                placeholder="Teléfono"
+                                required
+                            />
+
+                            <input
+                                type="text"
+                                name="pais"
+                                id="pais"
+                                placeholder="País"
+                                required
+                            />
+                        </div>
+
+                        <div class="contact2__form--languages">
+                            <span>Me interesa aprender</span>
+
+                            <div class="contact2__form--languages-options">
+                                <!--Ingles-->
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="language_option"
+                                        name="language_option"
+                                        value="ingles"
+                                        checked
+                                    />
+                                    <span>Inglés</span>
+                                </div>
+                                <!--Aleman-->
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="language_option"
+                                        name="language_option"
+                                        value="aleman"
+                                    />
+                                    <span>Alemán</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact2__form--languages">
+                            <span>Me interesa el plan</span>
+                            <div class="contact2__form--languages-options">
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="plan_option"
+                                        name="plan_option"
+                                        value="personal"
+                                        checked
+                                    />
+                                    <span>Personal</span>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="plan_option"
+                                        name="plan_option"
+                                        value="doble"
+                                    />
+                                    <span>Doble</span>
+                                </div>
+
+
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="plan_option"
+                                        name="plan_option"
+                                        value="familiar"
+                                    />
+                                    <span>Familiar</span>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="plan_option"
+                                        name="plan_option"
+                                        value="no lo se"
+                                    />
+                                    <span>No lo sé</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact2__form--message">
+                            <span>¿Tienes alguna duda?</span>
+                            <textarea
+                                name="mensaje"
+                                id="mensaje"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn__c-blue-g btn__s-normal btn__sh-normal">Enviar</button> 
+                    
+                    </form>
+
+            </section>
+        </main>
+         <!--Footer-->
+         <footer>
+            <span>Copyright - aprendeinglesonline | 2022</span>
+        </footer>
+        <!--Fin Footer-->
+
+        <!--Scripts-->
+        <script type="module" src="./javascript/main.js"></script>
+    </body>
+</html>
