@@ -930,11 +930,6 @@ footer > span {
   justify-items: center;
   align-items: center;
 }
-@media (max-width: 37.5em) {
-  .thanks {
-    background-position: left;
-  }
-}
 .thanks > div {
   display: flex;
   flex-direction: column;

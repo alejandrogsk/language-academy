@@ -13,9 +13,6 @@
     justify-items: center;
     align-items: center;
 
-    @include respond(phone-tab){
-        background-position: left;
-    }
 
     & > div {
         display: flex;
