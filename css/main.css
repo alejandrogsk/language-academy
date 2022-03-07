@@ -756,6 +756,11 @@ footer > span {
 .contact1 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/contact.jpg");
 }
+@media (max-width: 37.5em) {
+  .contact1 {
+    background-position: left;
+  }
+}
 
 .contact2 {
   display: grid;
@@ -924,6 +929,27 @@ footer > span {
   display: grid;
   justify-items: center;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .thanks {
+    background-position: left;
+  }
+}
+.thanks > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+@media (max-width: 50em) {
+  .thanks > div {
+    max-width: 70%;
+  }
+}
+@media (max-width: 37.5em) {
+  .thanks > div {
+    max-width: 100%;
+  }
 }
 .thanks > div > h1 {
   color: #fff;

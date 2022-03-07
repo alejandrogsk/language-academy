@@ -5,6 +5,10 @@
             rgba(0, 0, 0, 0.5)
         ),
         url("../assets/img/contact.jpg");
+
+    @include respond(phone-tab) {
+        background-position: left;
+    }
 }
 
 .contact2 {
