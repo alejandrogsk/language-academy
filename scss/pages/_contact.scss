@@ -100,8 +100,14 @@
 
 
                 &  > div {
+                   cursor: pointer;
+
                     &:first-child {
                         margin-left: 0;
+                    }
+
+                    & > input {
+                        cursor: pointer;
                     }
                 }
             }
