@@ -110,17 +110,17 @@
                         <div class="contact2__form--languages">
                             <span>Me interesa aprender</span>
 
-                            <div class="contact2__form--languages-options">
+                            <div id="languages_options_div" class="contact2__form--languages-options">
                                 <!--Ingles-->
                                 <div>
                                     <input
                                         type="radio"
                                         id="language_option"
                                         name="language_option"
-                                        value="ingles"
+                                        value="inglés"
                                         checked
                                     />
-                                    <span>Inglés</span>
+                                    <span id="inglés">Inglés</span>
                                 </div>
                                 <!--Aleman-->
                                 <div>
@@ -128,9 +128,10 @@
                                         type="radio"
                                         id="language_option"
                                         name="language_option"
-                                        value="aleman"
+                                        value="alemán"
                                     />
-                                    <span>Alemán</span>
+                                    <span id="alemán">Alemán</span>
+                                    <span id="reuso">reuso</span>
                                 </div>
                             </div>
                         </div>
@@ -204,5 +205,9 @@
 
         <!--Scripts-->
         <script type="module" src="./javascript/main.js"></script>
+
+
+        <!--Form scripts -->
+        <script src="./javascript/form/optionsTabBehavior.js"></script>
     </body>
 </html>
