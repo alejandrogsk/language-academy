@@ -801,6 +801,8 @@ footer > span {
 @media (max-width: 31.25em) {
   .contact2__form {
     padding: 3rem 2rem;
+    border-radius: 0;
+    box-shadow: none;
   }
 }
 .contact2__form > div > input {

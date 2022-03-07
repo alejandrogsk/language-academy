@@ -49,6 +49,8 @@
 
         @include respond(mobile-large) {
             padding: 3rem 2rem;
+            border-radius: 0;
+            box-shadow: none;
         }
     
 
